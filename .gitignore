@@ -1,0 +1,15 @@
+# Maven
+target/
+*.class
+*.jar
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Thumbnails directory
+thumbnails/
+
+# Logs
+*.log

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.StackPane?>
+
+<VBox alignment="TOP_CENTER" spacing="20" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.controllers.MainController" style="-fx-background-color: #1a1a1a;">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20" />
+    </padding>
+
+    <StackPane style="" maxWidth="400" maxHeight="224">
+        <ImageView fx:id="thumbnailView" 
+                   fitWidth="400" 
+                   fitHeight="224" 
+                   preserveRatio="true"
+                   style="-fx-background-color: #000000;">
+            <Image url="/images/placeholder5.jpg"/>
+        </ImageView>
+    </StackPane>
+
+    <Label text="Enter youtube video url: " style="-fx-text-fill: #e0e0e0;" />
+    <TextField fx:id="urlTextField" style="-fx-background-color: #333333; -fx-text-fill: #e0e0e0; -fx-border-color: #800020; -fx-border-width: 0 0 2 0;" />
+    <Button text="Download" onAction="#downloadVideo" style="-fx-background-color: #800020; -fx-cursor:hand; -fx-text-fill: #e0e0e0;"/>
+    <ProgressBar fx:id="progressBar" progress="0" prefWidth="300"/>
+</VBox>
