@@ -8,13 +8,11 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 public class DownloadController {
-    private final TextField urlTextField;
     private final ProgressBarController progressBarController;
     private final DownloadService downloadService;
     private final ValidationService validationService;
     
     public DownloadController(TextField urlTextField, ProgressBarController progressBarController) {
-        this.urlTextField = urlTextField;
         this.progressBarController = progressBarController;
         this.downloadService = new DownloadService();
         this.validationService = new ValidationService();
